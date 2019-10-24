@@ -11,6 +11,9 @@
   },
   "devDependencies": {},
   "homepage": "https://gurubasavaraja.github.io/withseo",
+  "reactSnap": {
+    "inlineCss": true
+  },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
