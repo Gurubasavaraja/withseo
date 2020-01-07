@@ -20,9 +20,9 @@ class App extends React.Component {
           <h2>With React-Snap</h2>
         </div>
         <Router>
-          <Link to ="/home">default</Link>
-        <Link to ="/">home</Link>
-        <Link to ="/school">school</Link>
+          <Link to ="/home">default</Link><br/>
+          <Link to="/">homes</Link><br />
+          <Link to="/school">schools</Link><br />
           <Switch>
             <Route path="/home"><MainComponent /></Route>
             <Route path="/school"><School /></Route>
