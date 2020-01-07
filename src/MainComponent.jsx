@@ -32,7 +32,7 @@ class MainComponent extends Component {
         return (
             <div>
 
-                {dataList.map((data) => <img src={data.CatImage} />)}
+                {dataList.map((data,index) => <img key={index} src={data.CatImage} />)}
             </div>
         );
     }

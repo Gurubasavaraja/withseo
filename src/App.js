@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import MainComponent from '../src/MainComponent.jsx'
+import MainComponent from '../src/MainComponent.jsx';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link} from 'react-router-dom';
+  import Home from '../src/home.js';
+import School from '../src/school.js'
+
 
 class App extends React.Component {
   render() {
@@ -11,7 +19,16 @@ class App extends React.Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>With React-Snap</h2>
         </div>
-        <MainComponent />
+        <Router>
+          <Link to ="/home">default</Link>
+        <Link to ="/">home</Link>
+        <Link to ="/school">school</Link>
+          <Switch>
+            <Route path="/home"><MainComponent /></Route>
+            <Route path="/school"><School /></Route>
+            <Route path="/"><Home/></Route>
+          </Switch>   
+        </Router>
       </div>
     );
   }
