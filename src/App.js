@@ -20,13 +20,13 @@ class App extends React.Component {
           <h2>With React-Snap</h2>
         </div>
         <Router>
-          <Link to ="/home">default</Link><br/>
-          <Link to="/">homes</Link><br />
+          <Link to ="/">default</Link><br/>
+          <Link to="/home">homes</Link><br />
           <Link to="/school">schools</Link><br />
           <Switch>
-            <Route path="/home"><MainComponent /></Route>
+            <Route path="/"><MainComponent /></Route>
             <Route path="/school"><School /></Route>
-            <Route path="/"><Home/></Route>
+            <Route path="/home"><Home/></Route>
           </Switch>   
         </Router>
       </div>
